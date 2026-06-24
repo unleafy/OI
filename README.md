@@ -6,12 +6,12 @@
 
 ## 📁 目录结构
 
+```
 .
 ├── main.cpp      # 日常练习代码文件
 ├── stored/       # 已通过题目代码存档
 └── record.md     # 做题记录
-
----
+```
 
 ## 🧠 代码规则
 
@@ -22,8 +22,6 @@
   - 思路验证
   - 调试算法
   - 赛时快速实现
-
----
 
 ### stored/
 
@@ -42,8 +40,6 @@ atcoder-abc301C.cpp
 - platform：luogu / codeforces / atcoder 等
 - problem-id：题号或编号
 - ext：一般为 cpp（或 py 等）
-
----
 
 ### record.md
 

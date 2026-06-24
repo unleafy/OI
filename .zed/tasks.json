@@ -1,7 +1,0 @@
-[
-  {
-    "label": "Run C++",
-    "command": "cd ${ZED_DIRNAME} && g++ ${ZED_FILE} -O2 -std=c++20 -o ${ZED_STEM} && echo 'Done' && clear && ./${ZED_STEM}",
-    "use_new_terminal": true,
-  },
-]
