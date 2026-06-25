@@ -69,7 +69,7 @@ for (int i = n; i >= 1; i--) {
 
 [code](https://www.luogu.com.cn/record/282768286)
 
-# Luogu-P5192
+# Luogu P5192
 
 [题目链接](https://www.luogu.com.cn/problem/P5192)
 
@@ -82,3 +82,13 @@ for (int i = n; i >= 1; i--) {
 ~然后建图跑有源上下界最大流就好了~，欸欸，不对，我的上下界网络流的超级源点和超级汇点哪去了？哦哦，还要有超级超级源点和超级超级汇点(应为没写这个调了 30mins)。
 
 [code](https://www.luogu.com.cn/record/282852103)
+
+# Luogu P2607
+
+[题目链接](https://www.luogu.com.cn/problem/P2607)
+
+发现题目中没有保证给出的图是一棵树，所以我们需要考虑有环的情况，即原图中可能存在基环树（森林）。
+
+直接枚举环上的边是否删除，删除一条边之后就得到了一棵树，对这棵新树做 dp 即可，但是还要考虑断掉的一条边两端端点的情况，两个点只能取一个，所以直接对两个点都做一次 dp，取 $max$ 即可。
+
+[code](https://www.luogu.com.cn/record/282880817)
