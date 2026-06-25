@@ -96,7 +96,7 @@ int main() {
     for (auto id : edges) {
       e[id].del = e[id ^ 1].del = true;
       path.clear();
-      memset(vis, false, sizeof(vis));
+      for (int i = 1; i <= n; i++) vis[i] = false;
       solve_tree(1);
       check(ans, path);
       e[id].del = e[id ^ 1].del = false;

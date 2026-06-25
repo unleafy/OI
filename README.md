@@ -27,13 +27,15 @@
 
 通过的题目代码统一归档，命名规则：
 
-{platform}-{problem-id}.{ext}
+`{platform}-{problem-id}.{ext}`
 
 示例：
 
+```
 luogu-P1001.cpp
 codeforces-1872A.cpp
 atcoder-abc301C.cpp
+```
 
 说明：
 
