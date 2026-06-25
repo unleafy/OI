@@ -112,3 +112,11 @@ for (int i = n; i >= 1; i--) {
 发现必定不走的边的编号一定比当前环上所有已遍历的点的编号都大时，这条边就不用走了，回溯即可，具体实现是需要记录一下以走过点的最大编号，然后要对原始边排序后再建图。
 
 [code](https://www.luogu.com.cn/record/list?pid=P5049&user=1023191)
+
+# Luogu P4043
+
+[题目链接](https://www.luogu.com.cn/problem/P4043)
+
+一道有源汇的上下界费用可行流板子，把有源汇上下界可行流的最大流改成费用流就可以了。
+
+[code](https://www.luogu.com.cn/record/282923086)
