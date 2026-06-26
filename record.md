@@ -144,3 +144,11 @@ for (int i = n; i >= 1; i--) {
 我们考虑先钦定一条边删除，然后考虑删除其他边对其的影响即可。对于每个前后缀记录一下 $max_dep$ 和子树内的最大直径，就可以在 $O(1)$ 的时间复杂度内完成转移。
 
 [code](https://www.luogu.com.cn/record/283007427)
+
+# Luogu P15410
+
+[题目链接](https://www.luogu.com.cn/problem/P15410)
+
+发现位置 $(i, j)$ 只可能移动到 $(n - i + 1, j), (i, m - j + 1), (n - i + 1, m - j + 1)$ 中的一个，所以判断一下每个位置上的是否合法即可。
+
+[code](https://www.luogu.com.cn/record/283077928)
