@@ -120,3 +120,13 @@ for (int i = n; i >= 1; i--) {
 一道有源汇的上下界费用可行流板子，把有源汇上下界可行流的最大流改成费用流就可以了。
 
 [code](https://www.luogu.com.cn/record/282923086)
+
+# Luogu P4381
+
+[题目链接](https://www.luogu.com.cn/problem/P4381)
+
+发现题目中没有保证给出的图是一棵树，需要处理环的问题，我们容易发现如果是一棵树，答案就是森林中每一棵树的直径之和。
+
+考虑处理环上的情况，我们记录 $f_u$ 表示不在环上、在 $u$ 的子树内的距离 $u$ 点最远的距离，然后答案就是 $max(f_u + f_v + dist_{u, v}, f_u + f_v + (len - dist_{u, v}))$ 以及子树中直径长度的最大值。
+
+[code](https://www.luogu.com.cn/record/282972413)
