@@ -166,3 +166,11 @@ for (int i = n; i >= 1; i--) {
 + 否则选择的点只可能在 $rt_u, rt_v$ 中的一个，判断即可。
 
 [code](https://www.luogu.com.cn/record/283126166)
+
+# Luogu P4320
+
+[题目链接](https://www.luogu.com.cn/problem/P4320)
+
+对原图建出圆方树，容易发现，一定经过的点必定是圆点，又因为圆方树上的圆点和方点都是交替相连，答案即为 $dist(u, v) / 2 + 1$。
+
+[code](https://www.luogu.com.cn/record/283154779)
