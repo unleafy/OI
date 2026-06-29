@@ -200,3 +200,13 @@ for (int i = n; i >= 1; i--) {
 我们建立 `dfs` 搜索树，在搜索树上用 $dfn_u$ 和 $low_u$ 判断即可。注意割边的判断 $low_{g2} \le dfn_{g1}$ 要取等。
 
 [code](https://www.luogu.com.cn/record/283240068)
+
+# Luogu P5236
+
+[题目链接](https://www.luogu.com.cn/problem/P5236)
+
+对仙人掌图建圆方树需要注意，可能存在圆圆边，即保留原来搜索树上的边不变。
+
+然后分类讨论一下 $LCA(u, v)$ 是圆点还是方点，如果是圆点，答案就是 $dist_u + dist_v - 2 * dist_{LCA(u, v)}$，否则需要考虑 $u \to LCA(u, v)$ 倒数第二个点是什么，记为 $a$，对于 $v$ 同理，即为 $b$，然后答案就是 $dist_v - dist_b + dist_u - dist_a + min_dist{a, b}$，即考虑 $a, b$ 在点双（环）内的最短路径。
+
+[code](https://www.luogu.com.cn/record/283326244)
